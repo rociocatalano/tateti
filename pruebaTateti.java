@@ -1,4 +1,4 @@
-package Tateti;
+package Tateti.tateti;
 
 public class pruebaTateti {
 
