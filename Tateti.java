@@ -40,9 +40,6 @@ public class Tateti {
 				jugadaCorrecta = true;
 				jugadasCompletas++;
 				mostrarTablero();
-			} else {
-				System.out.println("Esa posición ya se encuentra ocupada,\npor favor intente de nuevo.");
-				mostrarTablero();
 			}
 		}		
 	}
