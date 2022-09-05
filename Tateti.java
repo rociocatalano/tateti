@@ -4,7 +4,7 @@ public class Tateti {
 	
 	java.util.Scanner lector = new java.util.Scanner(System.in);
 	
-	private static char[][] tablero;
+	private char[][] tablero;
 	boolean jugadaCorrecta = false;
 	boolean hayGanador = false;
 	int jugadasCompletas = 0;
@@ -35,7 +35,9 @@ public class Tateti {
 			int filaJugador = Integer.parseInt(lector.nextLine());
 			System.out.println("Ingrese la columna elegida:");
 			int columnaJugador = Integer.parseInt(lector.nextLine());
-			if (tablero[filaJugador][columnaJugador] == '-') {		
+			if (filaJugador > 2 || filaJugador <0 || columnaJugador > 2 || columnaJugador < 0) {
+				System.out.println("Uno de los valores ingresados no es correcto.\nRecuerde ingresar un valor entre el 0 y el 2. Puede intentar de nuevo.");
+			} else if (tablero [filaJugador][columnaJugador] == '-') {		
 				tablero[filaJugador][columnaJugador] = 'X';
 				jugadaCorrecta = true;
 				jugadasCompletas++;
@@ -60,8 +62,6 @@ public class Tateti {
 				completo = true;
 				jugadasCompletas++;
 				mostrarTablero();
-			} else {
-				System.out.println("no se pudo");
 			}
 		}		
 		

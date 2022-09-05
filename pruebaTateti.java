@@ -5,6 +5,7 @@ public class pruebaTateti {
 	public static void main(String[] args) {
 		Tateti jugar = new Tateti();
 		System.out.println("Bienvenido al Tateti :)");
+		System.out.println("Instrucciones: Elija su fila y columna ingresando números del 0 al 2");
 		int jugador = 1;
 		jugar.crearYLlenarTablero();
 		jugar.mostrarTablero();
