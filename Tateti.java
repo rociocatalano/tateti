@@ -57,9 +57,7 @@ public class Tateti {
 				completo = true;
 				jugadasCompletas++;
 				mostrarTablero();
-			} else {
-				System.out.println("no se pudo");
-			}
+			} 
 		}		
 		
  	}
